@@ -1,0 +1,362 @@
+/* DEFAULT */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato' !important;
+    font-size: 14px !important;
+}
+header {
+    position: absolute;
+    width: 100%;
+    top: 18px;
+}
+header .container .row {
+    justify-content: space-between;
+    display: flex !important;
+}
+header, .soft_ware, .calendar, .booking, .any_device, .tracking, .point_sale, .report, .request  {
+    display: inline-block;
+    width: 100%;
+}
+
+.container .row {
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
+}
+
+img {
+    width: 100%;
+}
+.nav-bar a.logo img {
+    width: fit-content;
+}
+
+.contact {
+    display: flex;
+}
+.contact .email {
+    margin-right: 15px;
+}
+.contact img {
+    width: fit-content !important;
+}
+button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+/* MAIN */
+
+.soft_ware {
+    background-image: url("../images/bg_software.png");
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 172px;
+    max-height: 845px;
+    height: 100%;
+}
+.soft_ware .left_content {
+    margin: auto 56px auto 0;
+}
+.soft_ware .left_content h1 {
+    font-family: 'PlayfairDisplay-Black';
+    font-size: 60px;
+    color: #0099ff;
+}
+.soft_ware .left_content h5 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.soft_ware .left_content button.btn-primary-scroll {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #0099ff;
+    margin-top: 40px;
+}
+.soft_ware .img_right {
+    position: relative;
+    max-height: 551px;
+    height: 551px;
+}
+.soft_ware .img_right img {
+    width: fit-content;
+    position: absolute;
+    left: -50%;
+}
+.calendar {
+    background-image: url("../images/bg_canlendar.png");
+    width: 100%;
+    max-height: 850px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.calendar .container .row,
+.point_sale .container .row
+{
+    display: inline-block !important;
+    text-align: center;
+    color: white;
+    padding-top: 152px;
+}
+.point_sale .container .row {
+    color: #000;
+}
+.calendar h2.title
+{
+    font-family: 'PlayfairDisplay-Black';
+    font-size: 36px;
+    text-shadow: -2px 2px #0000006e;
+}
+.calendar h4.sub-title{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0;
+    text-shadow: -2px 2px #0000006e;
+}
+.calendar h5
+{
+    font-size: 18px;
+    font-family: 'Lato';
+    line-height: 35px;
+    width: 70%;
+    margin: auto;
+    font-weight: normal;
+}
+.calendar .img_right {
+    margin-top: 75px;
+}
+.calendar .img_right img {
+    position: absolute;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: fit-content;
+}
+.booking {
+    margin-top: 15%;
+}
+.booking .container-fluid .row,
+.any_device .container-fluid .row,
+.tracking .container-fluid .row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.booking .left_content,
+.tracking .left_content {
+    text-align: right;
+    display: block;
+    margin: auto 85px auto 0;
+}
+.booking .left_content h1,
+.any_device .left_content h1,
+.tracking .left_content h1{
+    font-family: 'PlayfairDisplay-Black';
+    font-size: 68px;
+}
+.booking .left_content h4 ,
+.any_device .left_content h4,
+.tracking .left_content h4 {
+    font-family: 'PlayfairDisplay-Black';
+    font-size: 24px;
+}
+
+.booking .left_content p,
+.tracking .left_content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    float: right;
+}
+
+.any_device .left_content {
+    display: block;
+    margin: auto 85px;
+    text-align: left;
+}
+.any_device .left_content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+}
+.point_sale h1{
+    font-size: 36px;
+    font-family: 'PlayfairDisplay-Black';
+    color: #333;
+}
+
+.point_sale h4,
+.report .left_content h4 {
+    font-family: 'Lato-BoldItalic';
+    font-weight: normal;
+    font-size: 20px;
+    color: #333;
+    margin: 20px auto;
+}
+.point_sale p {
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+    line-height: 28px;
+    color: #333;
+}
+.point_sale img {
+    width: fit-content;
+}
+.report {
+    display: inline-block;
+    width: 100%;
+    background-image: url('../images/bg_report.png');
+    height: 100%;
+    max-height: 700px;
+    background-repeat: no-repeat;
+    padding: 130px 0 75px;
+}
+.report .left_content {
+    margin: auto 0 auto 57px;
+}
+.report .left_content h1 {
+    font-size: 56px;
+    font-family: 'PlayfairDisplay-BoldItalic';
+    color: #333;
+}
+.report .left_content p {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    margin-top: 20px;
+    display: block;
+}
+.report .img_right {
+    position: relative;
+    height: 509px;
+}
+.report .img_right img {
+    width: fit-content;
+    position: absolute;
+    left: -32%;
+}
+.request {
+    background-image: url("../images/bg_request.png");
+    max-height: 831px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 123px 0;
+}
+
+.request .left_content {
+    margin: auto 85px auto 0;
+}
+.request .left_content h1 {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    font-size: 56px;
+    line-height: 64px;
+    color: #111;
+}
+.request .left_content p {
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+    display: block;
+}
+.request .img_right .form_request {
+    background-color: #fff;
+    border-radius: 30px;
+    max-width: 570px;
+    max-width: 600px;
+    padding: 50px 60px 60px;
+}
+.request .img_right .form_request h4 {
+    font-size: 24px;
+    font-family: 'PlayfairDisplay-BoldItalic';
+    margin-bottom: 40px;
+}
+.request .img_right .form_request .form-group.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0 10px;
+}
+.request .img_right .form_request button {
+    background-color: #0099ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+}
+
+
+/* DESKTOP */
+@media screen and (max-height: 1366px) {
+    .soft_ware .left_content {
+        margin: auto 120px auto 0;
+    }
+    .soft_ware .left_content h1 {
+        font-size: 44px;
+    }
+    .soft_ware .left_content h5 {
+        font-size: 16px;
+    }
+    .soft_ware .img_right img {
+        left: -61%;
+    }
+    .booking .left_content h1, .any_device .left_content h1, .tracking .left_content h1 {
+        font-size: 52px;
+    }
+    .calendar .container .row, .point_sale .container .row {
+        padding-top: 80px;
+    }
+    .booking {
+        margin-top: 10%;
+    }
+    .report {
+        background-size: cover;
+        height: inherit;
+        padding: 0;
+    }
+    .report .img_right img {
+        left: -10%;
+    }
+    .report .left_content {
+        margin: auto 0 auto 150px;
+    }
+}
+
+
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 1198px) {
+    .booking .left_content h1, .any_device .left_content h1, .tracking .left_content h1 {
+        font-size: 36px;
+    }
+    .booking .left_content h4, .any_device .left_content h4, .tracking .left_content h4 {
+        font-size: 22px;
+    }
+    .booking .left_content, .tracking .left_content {
+        margin: auto 30px auto 0;
+    }
+    .any_device .left_content {
+        margin: auto 0 auto 30px;
+    }
+    .any_device .left_content p,
+    .booking .left_content p, .tracking .left_content p{
+        width: 95%;
+    }
+}
