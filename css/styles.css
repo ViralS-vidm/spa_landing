@@ -70,6 +70,7 @@ button:focus {
 .soft_ware .left_content h5 {
     font-size: 18px;
     line-height: 28px;
+    margin: 20px 0;
 }
 .soft_ware .left_content button.btn-primary-scroll {
     width: 200px;
@@ -303,9 +304,12 @@ button:focus {
 
 
 /* DESKTOP */
-@media screen and (max-height: 1366px) {
+@media screen and (max-width: 1366px) {
+    .soft_ware .img_right {
+        padding: 15% 0;
+    }
     .soft_ware .left_content {
-        margin: auto 120px auto 0;
+        margin: auto;
     }
     .soft_ware .left_content h1 {
         font-size: 44px;
@@ -314,7 +318,9 @@ button:focus {
         font-size: 16px;
     }
     .soft_ware .img_right img {
-        left: -61%;
+        width: 600px;
+        position: inherit;
+        left: 0;
     }
     .booking .left_content h1, .any_device .left_content h1, .tracking .left_content h1 {
         font-size: 52px;
@@ -332,6 +338,10 @@ button:focus {
     }
     .report .img_right img {
         left: -10%;
+        width: 600px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
     .report .left_content {
         margin: auto 0 auto 150px;
@@ -342,7 +352,23 @@ button:focus {
 
 /* IPAD */
 
-@media (min-width: 768px) and (max-width: 1198px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container .row {
+        display: inline-block !important;
+    }
+    .soft_ware .left_content {
+        margin: auto;
+        text-align: center;
+    }
+    .soft_ware .img_right img {
+        position: initial;
+        left: 0;
+        width: 100%;
+    }
+    .soft_ware .left_content button.btn-primary-scroll {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
     .booking .left_content h1, .any_device .left_content h1, .tracking .left_content h1 {
         font-size: 36px;
     }
