@@ -9,6 +9,11 @@ body {
     font-family: 'Lato' !important;
     font-size: 14px !important;
 }
+input:focus {
+    border: 1px solid #ced4da !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
 header {
     position: absolute;
     width: 100%;
@@ -286,6 +291,17 @@ button:focus {
     font-size: 24px;
     font-family: 'PlayfairDisplay-BoldItalic';
     margin-bottom: 40px;
+}
+.request .img_right .form_request .form-group {
+    position: relative;
+}
+span.domain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    margin: auto;
+    height: fit-content;
 }
 .request .img_right .form_request .form-group.grid {
     display: grid;
